@@ -1,13 +1,13 @@
 .nav-grid {
     display: grid;
     gap: 2em;
-    grid-template-columns: 1fr repeat(2, minmax(min-content, max-content)) 1fr;
+    grid-template-columns: 1fr repeat(3, minmax(min-content, max-content)) 1fr;
     justify-items: center;
     align-items: center;
 
 
     @media only screen and (max-width: 600px) {
-        grid-template-columns: 1fr repeat(2, minmax(min-content, max-content)) 0px;
+        grid-template-columns: 1fr repeat(3, minmax(min-content, max-content)) 0px;
         gap: 1em;
     }
 
