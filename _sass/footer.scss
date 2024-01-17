@@ -1,0 +1,134 @@
+footer {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    background-color: white;
+    padding-bottom: 2em;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
+    padding-bottom: 16px;
+}
+
+footer ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.tail-footer {
+    color: black;
+    padding-bottom: 0em;
+}
+
+.tail-footer .content-wrapper {
+    background-color: white;
+}
+
+.call {
+    margin-top: -3em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: row;
+    background-color: $contrast;
+    color: white;
+    width: 100%;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: baseline;
+    gap: 1em;
+    border-radius: 3em;
+}
+
+.call h5 {
+    margin: 0;
+    min-width: fit-content;
+    display: inline;
+}
+
+.call span {
+    min-width: fit-content;
+    margin: 0;
+    font-size: 1.953rem;
+    font-weight: 600;
+}
+
+footer ul {
+    margin-bottom: 0;
+}
+
+.footer-wrapper {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact img {
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+.contact span {
+    vertical-align: middle;
+}
+
+.contact li {
+    margin-bottom: 0.2em;
+    min-width: 30ch;
+}
+
+#firmycz-button {
+    margin-top: auto;
+    display: block;
+}
+
+#firmycz-button a {
+    height: fit-content;
+    display: block;
+    line-height: 0;
+}
+
+.footer-wrapper {
+    overflow: hidden;
+    position: relative;
+    max-width: MIN(1080px, 100vw);
+    box-sizing: border-box;
+    margin: auto;
+
+    padding-left: 32px;
+    padding-right: 32px;
+
+    @media only screen and (max-width: 800px) {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+.footer-inner-wrapper {
+    max-width: MIN(1080px, 100vw);
+    box-sizing: border-box;
+
+    padding-left: 32px;
+    padding-right: 32px;
+
+    @media only screen and (max-width: 800px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+.topfooter {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tail-footer {
+    margin-top: 32px;
+}

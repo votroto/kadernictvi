@@ -1,0 +1,105 @@
+$bg-color: #f6f6f8;
+$fg-color: #000000;
+$contrast: #57206c;
+$body-font: 'Merriweather', serif;
+$heading-font: 'Karla', sans-serif;
+
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+html {
+    --s: 500px;
+    --c: ,#0000 39.75%,#FBFBFB 40.25% 93%,#0000 93.5%;
+    --_s: calc(1.5*var(--s))/calc(4*var(--s)) calc(3*var(--s));
+    background: radial-gradient(calc(1.5*var(--s)) at 37.5% 0% var(--c)) calc(-.5*var(--s)) var(--_s),
+        radial-gradient(calc(1.5*var(--s)) at 37.5% 100% var(--c)) calc(1.5*var(--s)) var(--_s),
+        radial-gradient(25% calc(50%/3), rgba(0,0,0,0) 98%, #f8f6f6) 0 0/calc(2*var(--s)) calc(3*var(--s)),
+        repeating-conic-gradient(#f8f6f6 0 25%, #FBFBFB 0 50%) 0 0/calc(4*var(--s)) calc(6*var(--s));
+}
+
+
+body {
+    //background: $bg-color;
+    color: $fg-color;
+    font-family: $body-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $heading-font;
+}
+
+a {
+    font-family: $heading-font;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+.content-wrapper {
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    flex-grow: 1;
+    max-width: MIN(1080px, 100vw);
+    box-sizing: border-box;
+
+    padding: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 0;
+
+    @media only screen and (max-width: 800px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+.text-wrapper {
+    position: relative;
+    margin: auto;
+    flex-grow: 1;
+    max-width: MIN(800px, 100vw);
+    box-sizing: border-box;
+}
+
+
+
+nav,
+footer,
+main,
+section {
+    display: flex;
+}
+
+main {
+    margin-bottom: 4em;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+p a {
+    text-decoration: underline;
+}
+
+p a+a {
+    margin-left: 1em;
+}
+
+.text-wrapper p {
+    max-width: 65ch;
+}

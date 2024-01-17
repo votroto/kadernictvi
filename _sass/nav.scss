@@ -1,0 +1,119 @@
+.nav-grid {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr repeat(2, minmax(min-content, max-content)) 1fr;
+    justify-items: center;
+    align-items: center;
+
+
+    @media only screen and (max-width: 600px) {
+        grid-template-columns: 1fr repeat(2, minmax(min-content, max-content)) 0px;
+        gap: 1em;
+    }
+
+}
+
+.nav-grid a:first-child {
+    justify-self: start;
+}
+
+.nav-grid a:last-child {
+    justify-self: end;
+
+    @media only screen and (max-width: 600px) {
+        display: none;
+    }
+
+}
+
+nav {
+    display: flex;
+
+    color: $contrast;
+    font-family: $heading-font;
+    background-color: $bg-color;
+    font-size: 1.25em;
+    width: 100%;
+    top: 0px;
+
+    z-index: 10;
+}
+
+.fab {
+    display: none;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+
+    font-size: 22px;
+    width: fit-content;
+    height: fit-content;
+    background: $contrast;
+    border-radius: 2em;
+    color: white;
+
+    padding: 16px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    gap: 0.4em;
+    z-index: 11;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    align-items: center;
+
+    @media only screen and (max-width: 600px) {
+        display: flex;
+    }
+}
+
+.fab {
+    animation: appear 0.5s;
+}
+
+.fab img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fab span {
+    font-size: 16px;
+    line-height: 16px;
+}
+
+
+.hero-link {
+    line-height: 1;
+    font-size: 16px;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    background: $contrast;
+    border-radius: 2em;
+    color: white;
+    padding: 0.4em 1em 0.4em 1em;
+    gap: 0.4em;
+
+    align-items: center;
+}
+
+
+.home-link {
+    line-height: 1;
+}
+
+
+.nav-logo {
+    height: 37px;
+}
