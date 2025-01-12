@@ -1,3 +1,5 @@
+@use "var";
+
 footer {
     margin-top: 3em;
     display: flex;
@@ -34,8 +36,8 @@ footer ul {
     margin-bottom: 2em;
     display: flex;
     flex-direction: row;
-    background-color: $contrast;
-    color: white;
+    background-color: var.$dark;
+    color: var.$light;
     width: 100%;
     padding: 16px 32px;
     justify-content: center;
@@ -46,6 +48,7 @@ footer ul {
 
 .call h5 {
     margin: 0;
+    color: var.$light;
     min-width: fit-content;
     display: inline;
 }

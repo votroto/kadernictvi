@@ -4,10 +4,6 @@ location: Nádražní 166, Opočno
 phone: "+420 722 721 776"
 phone_short: "722 721 776"
 ico: "63824647"
-description: Dámské, pánské a dětské kadeřnictví. Při péči o vlasy zákazníka kladu důraz na přirozený vzhled, zdravý vlas a pohodu během návštěvy kadeřnictví. Používám pouze osobně vyzkoušenou a dlouhodobě prověřenou profesionální vlasovou kosmetiku.
 
 sass:
   style: compressed
-
-plugins:
-  - jekyll-sitemap

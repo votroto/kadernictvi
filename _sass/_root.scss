@@ -1,9 +1,4 @@
-$bg-color: #f6f6f8;
-$fg-color: #000000;
-$contrast: #57206c;
-$body-font: 'Merriweather', serif;
-$heading-font: 'Karla', sans-serif;
-
+@use "var";
 
 body,
 html {
@@ -24,9 +19,13 @@ html {
 
 
 body {
-    //background: $bg-color;
-    color: $fg-color;
-    font-family: $body-font;
+    color: var.$fg-color;
+    font-family: var.$body-font;
+
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
 }
 
 h1,
@@ -34,18 +33,19 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: $heading-font;
+    font-family: var.$heading-font;
+    color: var.$dark;
 }
 
 a {
-    font-family: $heading-font;
+    font-family: var.$heading-font;
     text-decoration: none;
     color: inherit;
 }
 
 
 a:hover {
-    text-decoration: underline;
+    filter: saturate(0);
 }
 
 .content-wrapper {
@@ -75,8 +75,6 @@ a:hover {
     box-sizing: border-box;
 }
 
-
-
 nav,
 footer,
 main,
@@ -93,8 +91,14 @@ iframe {
 }
 
 p a {
-    text-decoration: underline;
+    font-style: italic;
 }
+
+p a:hover {
+    text-decoration: wavy underline 2px;
+    text-underline-offset: 0.3em;
+}
+
 
 p a+a {
     margin-left: 1em;
@@ -102,4 +106,8 @@ p a+a {
 
 .text-wrapper p {
     max-width: 65ch;
+}
+
+h1 em, h2 em, h3 em {
+    font-weight: 800;
 }

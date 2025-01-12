@@ -1,3 +1,5 @@
+@use "var";
+
 .nav-grid {
     display: grid;
     gap: 2em;
@@ -29,10 +31,8 @@
 nav {
     display: flex;
 
-    color: $contrast;
-    font-family: $heading-font;
-    background-color: $bg-color;
-    font-size: 1.25em;
+    color: var.$dark;
+    font-family: var.$heading-font;
     width: 100%;
     top: 0px;
 
@@ -48,11 +48,11 @@ nav {
     font-size: 22px;
     width: fit-content;
     height: fit-content;
-    background: $contrast;
+    background: var.$dark;
     border-radius: 2em;
     color: white;
 
-    padding: 16px;
+    padding: 12px;
     padding-right: 20px;
     padding-left: 20px;
 
@@ -72,8 +72,8 @@ nav {
 }
 
 .fab img {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     vertical-align: middle;
 }
 
@@ -90,6 +90,7 @@ nav {
 .fab span {
     font-size: 16px;
     line-height: 16px;
+    font-weight: 800;
 }
 
 
@@ -97,13 +98,15 @@ nav {
     line-height: 1;
     font-size: 16px;
     display: flex;
-    width: fit-content;
+    width: max-content;
     height: fit-content;
-    background: $contrast;
+    background: var.$dark;
     border-radius: 2em;
     color: white;
-    padding: 0.4em 1em 0.4em 1em;
+    padding: 0.4em 2em 0.4em 2em;
     gap: 0.4em;
+    font-weight: 600;
+
 
     align-items: center;
 }
